@@ -1,0 +1,37 @@
+{
+  "name": "geoffrey_meunier/blog-marvel",
+  "description": "Projet web sur le blogin",
+  "version": "1.0.0",
+  "type": "project",
+  "keywords": [
+    "blog",
+    "marvel"
+  ],
+  "homepage": "http://marvel.local",
+  "time": "2023/05/25",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Geoffrey Meunier",
+      "email": "geoffrey_meunier@live.be",
+      "homepage": "https://mon-site-perso-com",
+      "role": "Employé"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Router\\": "routes/",
+      "App\\": "app/",
+      "Database\\":"database/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "twbs/bootstrap": "5.2.3",
+    "twbs/bootstrap-icons": "^1.10"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.15",
+    "symfony/var-dumper": "^6.2"
+  }
+}

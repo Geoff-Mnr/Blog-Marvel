@@ -1,0 +1,469 @@
+/*Style Layout
+Style pour le header*/
+header a{
+  text-decoration: none;
+}
+
+.no-gutter {
+  padding-right:0;
+  padding-left:0;
+  margin: 0;
+}
+
+.no-gutter img{
+  margin: 0;
+}
+
+.menu .lien{
+      box-shadow: inset 0 0 0 0 #dc3545;
+      color: black;
+      padding: 0 .25rem;
+      margin: 0 -.25rem;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      padding: .5rem;
+}
+
+.menu .lien:hover {
+  color: #FBFBFB;
+  box-shadow: inset 200px 0 0 0 #dc3545;
+}
+
+
+
+/* Style pour le footer*/
+footer .btn{
+  border: 0.5px black solid;
+
+}
+
+footer .btn:hover{
+  background-color: #000;
+  color: #FBFBFB;
+}
+
+footer #newsletter1 {
+  border: 0.5px black solid;
+}
+
+.bg-footer{
+  background-color:  #f3f3f3;
+}
+
+.link-footer{
+  color: #332D2D;
+  text-decoration: none;
+}
+
+.link-footer:hover{
+  font-weight: bold;
+  color: #332D2D;
+}
+
+.link-social{
+  color: #332D2D;
+  text-decoration: none;
+}
+
+.link-social:hover{
+  color: #dc3545;
+}
+/*Fin Style Layout*/
+
+
+
+
+/*style pour les heros*/
+.bg-hero{
+  background-color:#000 ;
+  z-index: -1;
+}
+
+.hero-main {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 7rem;
+}
+
+.hero-main::before {
+  content: "";
+  background-image: url(../img/main-banner.webp);
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.hero-main .container-h1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-main .container-h1 h1 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  color: #FBFBFB;
+  font-weight: 700;
+  font-size: 3vw;
+}
+
+.hero-news {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 7rem;
+}
+
+.hero-news::before {
+  content: "";
+  background-image: url(../img/banner-news.webp);
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.hero-news.container-h1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-news .container-h1 h1 {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  color: #FBFBFB;
+  font-weight: 700;
+  font-size: 3vw;
+}
+
+.hero-movies {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 7rem;
+}
+
+.hero-movies::before {
+  content: "";
+  background-image: url(../img/banner-movies.webp);
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.hero-movis .container-h1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-movies .container-h1 h1 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  color: #FBFBFB;
+  font-weight: 700;
+  font-size: 3vw;
+}
+
+
+.hero-show {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 7rem;
+}
+
+.hero-show::before {
+  content: "";
+  background-image: url(../img/hero-news.webp);
+  position: absolute;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.hero-show .container-h1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-show .container-h1 h1 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  color: #FBFBFB;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.hero-tag {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 7rem;
+}
+
+.hero-tag::before {
+  content: "";
+  background-image: url(../img/hero-tag.webp);
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.hero-tag .container-h1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-tag .container-h1 h1 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  color: #FBFBFB;
+}
+
+
+
+
+/*Fin Style hero-banner*/
+
+
+
+
+/*Style index.php*/
+.call-to-action{
+  background-color: #000;
+}
+
+
+
+.card-footer{
+  background-color: #000;
+  color: #FBFBFB;
+}
+
+.main-contact{
+  background: #000;
+}
+/*Fin Style index.php*/
+
+
+/*Style news.php*/
+h3 a{
+  text-decoration: none;
+  font-size: 2vh;
+  color: #332D2D;
+  font-weight: 700;
+}
+
+h3 a:hover{
+  color: #E92227;
+}
+
+
+.link-tag a{
+  text-decoration: none;
+  color: #FBFBFB;
+}
+
+.link-tag a:hover{
+  text-decoration: underline;
+}
+/*fin style news.php*/
+
+
+
+
+/*Style css pour la page login.php */
+.main{
+    background-color: #000;
+}
+
+
+.main-login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 7rem;
+  }
+  
+  /*img en z-index -1 pour pouvoir avoir cet effet transparant et en position absolute car le header est en position relative*/
+  .main-login::before {
+    content: "";
+    background-image: url(../img/banner-news.webp);
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.3;
+  }
+
+  .form-login{
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+/*Fin Style login.php*/
+
+
+
+
+
+
+
+
+/*Style pour la page 404*/
+
+  .btn-404{
+    background-color: #dc3545;
+    color: #332D2D;
+  }
+
+
+  .btn-404:hover{
+    background-color: #000;
+    color: #dc3545;
+  }
+
+  /*Fin Style 404.php*/
+
+
+
+  /*Style show.php*/
+  .button-tag{
+    background-color: #dc3545;
+    text-decoration: none;
+    color: #332D2D;
+  }
+  
+  .button-tag:hover{
+    background-color: #000;
+    color: #dc3545;
+  }
+  
+  
+  .card-header{
+    background-color: #000;
+    color: #FBFBFB;
+  }
+
+  .card-header:hover{
+    text-decoration: underline;
+  }
+  
+  .button-return{
+    background-color: #dc3545;
+    text-decoration: none;
+    color: #332D2D;
+  }
+  
+  .button-return:hover{
+    background-color: #000;
+    color: #dc3545;
+  }
+  /*Fin show.php*/
+
+  /*Style pour tag.php*/
+
+  .card-tag h2 a{
+    background-color: #000;
+    color: #FBFBFB;
+    text-decoration: none;
+  }
+
+  .card-tag h2 a:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+  /*Style Responsive*/
+
+ 
+
+  /*Fin Style responsive*/
